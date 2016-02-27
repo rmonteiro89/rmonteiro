@@ -35,13 +35,31 @@
   color: #E4C57C;
 }
 
+.header-arrow {
+  font-size:36px;
+  color: #FFF;
+  cursor: pointer;
+  animation: feature-text-anim 1.75s ease-in-out;
+}
+
+.header-arrow:hover {
+  -webkit-transform: translate(0px,6px);
+  -ms-transform: translate(0px,6px);
+  transform: translate(0px,6px);
+}
+
+.me-image {
+  width: 65%;
+  height: auto;
+}
+
 @media only screen and (min-width: 820px) {
   .header-image {
-    height: 100%;
-    max-width: 100%; /* for IE 6 */
     top: 0px;
     left: 0px;
+    max-width: 100%; /* for IE 6 */
     width: auto;
+    height: auto;
     position: relative;
   }
 
