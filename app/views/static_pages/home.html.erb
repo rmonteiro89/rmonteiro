@@ -19,10 +19,17 @@
     </div>
     <%= render 'static_pages/places' %>
   </div>
-  <div class="col-md-6">
-    <div class="page-header text-center">
+  <div class="col-md-6 text-center">
+    <div class="page-header">
       <h2 id="contact">Instagram</h2>
     </div>
+    <table>
+      <% @instagram.each do |instagram| %>
+        <tr>
+          <%= image_tag instagram.images.standard_resolution.url, class: "instagram-img" %>
+        </tr>
+      <% end %>
+    </table>
   </div>
 </div>
 

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'instagram'
 gem 'font-awesome-sass', '~> 4.5.0'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap-social-rails'
