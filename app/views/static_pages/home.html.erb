@@ -15,7 +15,7 @@
 <div class="row">
   <div class="col-md-6">
     <div class="page-header text-center">
-      <h2 id="contact">Places I've been</h2>
+      <h2 id="contact">Places I've Been <small>(total 19 countries)</small></h2>
     </div>
     <%= render 'static_pages/places' %>
   </div>
@@ -23,13 +23,7 @@
     <div class="page-header">
       <h2 id="contact">Instagram</h2>
     </div>
-    <table>
-      <% @instagram.each do |instagram| %>
-        <tr>
-          <%= image_tag instagram.images.standard_resolution.url, class: "instagram-img" %>
-        </tr>
-      <% end %>
-    </table>
+    <%= render 'static_pages/instagram_pics' %>
   </div>
 </div>
 
