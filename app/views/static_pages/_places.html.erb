@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col-md-12">
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var locations = [
+          ["United States", 40.70583,-74.2588821],
+          ["Brazil", -23.6815302,-46.8761832],
+          ["Chile", -33.4532908,-70.7142989],
+          ["Portugal", 38.7437395,-9.2304158],
+          ["Spain", 41.3948975,2.0785558],
+          ["France", 48.8589506,2.2773452],
+          ["Italy", 41.9102411,12.3955689],
+          ["Slovenia", 46.0662696,14.3916707],
+          ["Croatia", 45.8403491,15.8239031],
+          ["Hungary", 47.4807319,18.9898749],
+          ["Romania", 44.4379849,25.9542089],
+          ["Bulgaria", 42.6955987,23.1835178],
+          ["England", 51.5287336,-0.3824701],
+          ["Ireland", 53.3244427,-6.3861312],
+          ["Scotland", 55.9411417,-3.275595],
+          ["Turkey", 41.0054989,28.731301],
+          ["Ukraine", 50.4021351,30.2518183],
+          ["Australia", -37.8578635,144.5177881],
+          ["New Zealand", -44.838141,168.1549501]
+        ];
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: new google.maps.LatLng(0, 0),
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          mapTypeControl: false,
+          streetViewControl: false,
+          panControl: false,
+          zoomControlOptions: {
+             position: google.maps.ControlPosition.LEFT_BOTTOM
+          }
+        });
+
+        var markers = new Array();
+
+        // Add the markers and infowindows to the map
+        for (var i = 0; i < locations.length; i++) {
+          var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map,
+            title: locations[i][0]
+          });
+
+          markers.push(marker);
+        }
+
+        //  Create a new viewpoint bound
+        var bounds = new google.maps.LatLngBounds();
+        //  Go through each...
+        for (var i = 0; i < markers.length; i++) {
+          bounds.extend(markers[i].position);
+        }
+        //  Fit these bounds to the map
+        map.fitBounds(bounds);
+      }
+    </script>
+  </div>
+</div>

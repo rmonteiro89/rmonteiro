@@ -1,12 +1,29 @@
-<div class="container">
-  <div class="page-header text-center">
-    <h2 id='about'>About</h2>
-  </div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="page-header text-center">
+      <h2 id='about'>About Me</h2>
+    </div>
+    <%= render 'static_pages/about' %>
 
-  <div class="page-header text-center">
-    <h2 id="contact">Contact Information</h2>
+    <div class="page-header text-center">
+      <h2 id="contact">Contact Information</h2>
+    </div>
+    <%= render 'static_pages/contact' %>
   </div>
-  <%= render 'static_pages/contact' %>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="page-header text-center">
+      <h2 id="contact">Places I've been</h2>
+    </div>
+    <%= render 'static_pages/places' %>
+  </div>
+  <div class="col-md-6">
+    <div class="page-header text-center">
+      <h2 id="contact">Instagram</h2>
+    </div>
+  </div>
 </div>
 
 <nav class="navbar">
