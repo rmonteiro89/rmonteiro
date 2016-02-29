@@ -1,7 +1,7 @@
 <table>
   <% @instagram.each do |instagram| %>
     <tr>
-      <%= image_tag instagram.images.standard_resolution.url, class: "instagram-img" %>
+      <%= image_tag instagram.images.thumbnail.url, class: "instagram-img" %>
     </tr>
   <% end %>
 </table>
