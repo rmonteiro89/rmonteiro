@@ -8,30 +8,50 @@
   }
 }
 
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
-
-.header-image {
-  top: 0px;
-  left: -149px;
-  width: 715px;
-  height: 321px;
+.container {
   position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.header-text {
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+.header-bg {
+  opacity: 1;
+  top: -30px;
+  left: -380px;
+  bottom: 0;
+  right: 0;
   position: absolute;
-  top: 121px;
-  width: 111%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-bg--image {
+  background-image: image-url('bg2.jpg');
+}
+
+.header {
+  position: relative;
+  padding-bottom: 200px;
+  background-color: #000;
+}
+
+.header .container {
+  z-index:1;
 }
 
 .header-size-bg {
+  padding-top: 200px;
   font-family: 'Libre Baskerville', serif;
-  font-size: 21px;
+  font-size: 28px;
   color: #424036;
 }
 
 .header-size-md {
-  font-size: 20px;
+  font-size: 28px;
   color: #E4C57C;
 }
 
@@ -68,23 +88,20 @@ footer {
   margin-top: 30px;
 }
 
-@media only screen and (min-width: 820px) {
-  .header-image {
-    top: 0px;
-    left: 0px;
-    max-width: 100%; /* for IE 6 */
-    width: auto;
-    height: auto;
-    position: relative;
-  }
-
-  .header-text {
+@media only screen and (min-width: 599px) {
+  .header-bg {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     position: absolute;
-    top: 200px;
-    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .header-size-bg {
+    padding-top: 200px;
     font-family: 'Libre Baskerville', serif;
     font-size: 47px;
     color: #424036;
