@@ -8,15 +8,16 @@
       <p>I love to travel and to live in different places.</p>
     </h4>
     <br>
-    <p><a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseMoreAbout" aria-expanded="false" aria-controls="collapseMoreAbout">
-      More about me...
-    </a></p>
+    <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseMoreAbout" aria-expanded="false" aria-controls="collapseMoreAbout">More about me...
+    </a>
+    <%= link_to 'Download Resume', resume_path, target: '_blank', class: "btn"%>
   </div>
 </section>
 
 <div class="collapse" id="collapseMoreAbout">
   <div class="container">
     <div class="row">
+      <br>
       <div class="col-md-4">
         <dl>
           <dt><h4>I've been working with:</h4></dt>
