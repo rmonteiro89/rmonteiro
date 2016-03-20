@@ -35,7 +35,7 @@
 
 .header {
   position: relative;
-  padding-bottom: 200px;
+  padding-bottom: 154px;
   background-color: #000;
 }
 
@@ -43,15 +43,20 @@
   z-index:1;
 }
 
-.header-size-bg {
+.header-maintext {
   padding-top: 200px;
   font-family: 'Libre Baskerville', serif;
   font-size: 28px;
   color: #424036;
 }
 
-.header-size-md {
+.header-subtext {
   font-size: 28px;
+  color: #E4C57C;
+}
+
+.header-disclaimer {
+  font-size: 20px;
   color: #E4C57C;
 }
 
@@ -71,6 +76,10 @@
 .me-image {
   width: 65%;
   height: auto;
+}
+
+.contact-text {
+  text-align: center;
 }
 
 #map {
@@ -100,16 +109,20 @@ footer {
     background-size: cover;
   }
 
-  .header-size-bg {
+  .header-maintext {
     padding-top: 200px;
     font-family: 'Libre Baskerville', serif;
     font-size: 47px;
     color: #424036;
   }
 
-  .header-size-md {
+  .header-subtext {
     font-size: 44px;
     color: #E4C57C;
+  }
+
+  .contact-text {
+    text-align: left;
   }
 
   #map {

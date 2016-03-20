@@ -21,3 +21,8 @@
 
 en:
   hello: "Hello world"
+  contact:
+    current_location: Budapest, Hungary
+    current_time: UTC +1
+    email: rmonteiro89@hotmail.com
+    skype: rmonteiro89

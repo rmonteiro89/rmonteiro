@@ -1,16 +1,17 @@
 <section class="row">
   <div class="col-md-6">
-    <%= image_tag('my-photo.jpg', class: 'img-responsive me-image center-block', alt: "Photo of me") %>
+    <%= image_tag('my-photo.jpg', class: 'img-rounded img-responsive me-image center-block', alt: "Photo of me") %>
   </div>
-  <div class="col-md-6">
-      <p><strong>Zagreb, Croatia (UTC +1 hour)</strong></p>
-      <p>
-        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <strong><a href="mailto:#">rmonteiro89@hotmail.com</a></strong>
-      </p>
-      <p><strong>Skype:</strong> rmonteiro89</p>
-      <a class="btn btn-social-icon btn-linkedin" href="https://br.linkedin.com/in/raphael-monteiro-339bb327" target="_blank"><span class="fa fa-linkedin"></span></a>
-      <a class="btn btn-social-icon btn-github" href="https://github.com/rmonteiro89" target="_blank"><span class="fa fa-github"></span></a>
-      <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/raphamonteiro" target="_blank"><span class="fa fa-twitter"></span></a>
-      <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/raphael.monteiro.7374" target="_blank"><span class="fa fa-facebook"></span></a>
+  <div class="col-md-6 contact-text">
+    <br>
+    <p><strong><%= "#{t('contact.current_location')} (#{t('contact.current_time')})" %></strong></p>
+    <p>
+      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <strong><a href="mailto:#"><%= t('contact.email') %></a></strong>
+    </p>
+    <p><strong>Skype:</strong> <%= t('contact.skype') %> </p>
+    <a class="btn btn-social-icon btn-linkedin" href="https://br.linkedin.com/in/raphael-monteiro-339bb327" target="_blank"><span class="fa fa-linkedin"></span></a>
+    <a class="btn btn-social-icon btn-github" href="https://github.com/rmonteiro89" target="_blank"><span class="fa fa-github"></span></a>
+    <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/raphamonteiro" target="_blank"><span class="fa fa-twitter"></span></a>
+    <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/raphael.monteiro.7374" target="_blank"><span class="fa fa-facebook"></span></a>
   </div>
 </section>
